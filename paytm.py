@@ -39,7 +39,7 @@ def load_data(path: str):
     return df
 
 
-DATA_PATH = r"C:\Users\Haresh L\OneDrive\Documents\decipher 5.0\698627992e03e_Round_2_dataset_decipher.csv"
+DATA_PATH = r"698627992e03e_Round_2_dataset_decipher.csv"
 df = load_data(DATA_PATH)
 
 
@@ -332,4 +332,5 @@ top_risk = risk_df.sort_values("churn_risk_score", ascending=False).head(25)[
 ]
 
 st.dataframe(top_risk, use_container_width=True)
+
 
